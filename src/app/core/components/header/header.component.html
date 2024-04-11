@@ -1,0 +1,17 @@
+<header class="bg-main dark-nav sticky top-0 flex items-center px-10 justify-between">
+<!-- Logo & Navitems -->
+<div class="flex gap-5">
+    <img width="110" src="/assets/netflix-logo.png" alt="netflix-logo">
+    <ul class="flex items-center gap-5">
+        @for (item of navList; track $index) {
+            <li class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-gray-400 transition-[1s]">{{item}}</li>
+        }
+    </ul>
+</div>
+<!-- Welcome User | Profile Image | Signout -->
+<div class="flex items-center gap-5 text-gray-50">
+    <span>Welcome <strong>{{username}}</strong></span>
+    <img [src]="userImg" width="42" class="rounded-full" alt="profile-image" > |
+    <button class="p-1 rounded px-2 text-sm" (click)="signout()">Sign Out</button>
+</div>
+</header>

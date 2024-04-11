@@ -1,0 +1,11 @@
+.bg-main{
+    height: 68px;
+    z-index: 10;
+}
+
+.dark-nav{
+    background: #141414;
+}
+.netflix-red{
+    background-color: rgb(193, 17, 25);
+}

@@ -1,0 +1,16 @@
+<div class="youtube-container">
+    <iframe class="w-screen" [src]="videoUrl" frameborder="0" ></iframe>
+</div>
+<div class="h-screen bg-white ">
+    <div class="pt-[20%] h-full px-24 absolute text-white bg-gradient-to-r from-black">
+        <h1 class="text-5xl font-bold">{{bannerTitle}}</h1>
+        <!-- <span>{{bannerVideoKey[0].key}}</span> -->
+        <p class="inline-block py-6 text-xl w-1/4 flex-wrap">
+            {{bannerOverview}}
+        </p>
+        <div class="flex gap-2">
+            <button class="bg-white text-black py-3 px-12 text-xl rounded-lg hover:bg-opacity-70 transition-[1s]">Play</button>
+            <button class="bg-gray-500 text-white py-3 px-12 text-xl rounded bg-opacity-50 ">More Info</button>
+        </div>
+    </div>
+</div> 
