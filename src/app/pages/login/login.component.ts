@@ -1,6 +1,7 @@
 declare var google: any
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   private router = inject(Router)
   ngOnInit(): void {
     google.accounts.id.initialize({
-      client_id: '311602429920-o56v5me18rrkoh4uj9sda916cb0rckga.apps.googleusercontent.com',
+      client_id: environment.client_id,
       callback: (resp: any)=>{
         this.handlelogin(resp)
       }
